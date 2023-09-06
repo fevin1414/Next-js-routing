@@ -1,14 +1,13 @@
 import { useRouter } from "next/router";
-function PortfolioProjectPage() {
+function ClientProjectsPage(){
   const router = useRouter();
-
   console.log(router.pathname);
   console.log(router.query);
-
-  return (
+  return(
     <div>
-      <h1>The Portfolio Project Page</h1>
+      <h1>The Projects of a Given Client</h1>
     </div>
   );
 }
-export default PortfolioProjectPage;
+
+export default ClientProjectsPage;
