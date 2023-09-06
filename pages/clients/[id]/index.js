@@ -3,9 +3,14 @@ function ClientProjectsPage(){
   const router = useRouter();
   console.log(router.pathname);
   console.log(router.query);
+
+  function loadProjectHandler(){
+  router.push('/clients/max/project A')
+  }
   return(
     <div>
       <h1>The Projects of a Given Client</h1>
+      <button onClick={loadProjectHandler}>Load Project A</button>
     </div>
   );
 }
